@@ -13,8 +13,8 @@
 
 <body>
     <script>
-        let paths = window.location.pathname.split('/');
-        window.location.href = 'https://ovan-carla.ct.ws/' + (paths[2] ? paths[2] : '');
+        let paths = window.location.search.replace('?','');
+        window.location.href = 'https://ovan-carla.ct.ws/' + paths;
     </script>
 </body>
 
